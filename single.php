@@ -5,12 +5,12 @@
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="container bg-dark">
-        <h1 class="display-1 text-white"><?php the_title();?></h1>
-
+        <h1 class="display-1 text-white col-lg-8"><?php the_title();?></h1>
+        
+   <div class="col-lg-4"><?php the_post_thumbnail("medium" )?></div> 
+    <div class="bg-light">
    <p> <?php the_content( ); ?> </p> 
-
-   <?php the_post_thumbnail( )?> 
-
+   </div> 
    </div> 
 
     <?php endwhile; else : ?>
