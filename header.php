@@ -11,7 +11,7 @@
         <div class="main-wrapper">
         <header class="bg-dark text-white">
         <div class="row">
-        <h1 class="col-12 col-lg-8">Flipper Hub</h1>
+        <h1 class="col-12 col-lg-8 d-flex align-items-center"><a class="text-white" href="<?php bloginfo("url" ); ?>">Flipper Hub</a></h1>
         <div class="navbar col-12 col-lg-4">
         <?php
             wp_nav_menu( array(

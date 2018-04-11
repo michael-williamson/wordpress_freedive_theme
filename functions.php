@@ -23,4 +23,24 @@
     register_nav_menus(array(
         'primary'=> __('Primary Menu')
     ));
+
+    function business_customize_register($wp_customize){
+        $wp_customize->add_section('banner', array(
+            'title' => __('Banner', 'mw_flipper_hub'),
+            'description' => sprintf(__('Options for homepage banner','mw_flipper_hub')),
+            'priority' => 130
+        ));
+        $wp_customize->add_setting('banner-heading', array(
+            'default' => _x('Discover the Deep.', 'mw_flipper_hub'),
+            'type' => 'theme_mod'
+        ));
+        $wp_customize->add_control('banner-heading', array(
+            'label' => __('heading', 'mw_flipper_hub'),
+            'section' => 'banner',
+            'priority' => 20
+        ));
+
+    }
+
+    add_action('customize_register','business_customize_register');
 ?> 

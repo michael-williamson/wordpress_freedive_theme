@@ -2,7 +2,9 @@
 
     <div class="jumbotron container-fluid mb-0">
 
-        <h1 class="display-2 text-white bg-dark d-inline-block px-3 rounded col-12">Discover the Deep.</h1> 
+        <h1 class="display-2 text-white bg-dark d-inline-block px-3 rounded col-12">
+            <?php echo get_theme_mod('banner-heading','banner-heading'); ?>
+        </h1> 
         <p class="lead bg-dark text-info p-3 rounded d-inline-block">Th blue expanse to spend for a while...</p> 
         <div class="row bg-dark d-flex justify-content-around pt-1 pb-5 col-10 mx-auto mt-5 rounded">
             <h1 class="text-white col-10">Posts</h1>
@@ -39,7 +41,7 @@ else :
 	 esc_html_e( 'Sorry, no posts matched your criteria.' ); 
 endif; 
 ?>
-
+    </div> 
     </div><!-- end of jumbotron--> 
 
 <?php get_footer(); ?> 
