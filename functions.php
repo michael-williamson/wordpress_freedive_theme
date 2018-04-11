@@ -1,7 +1,7 @@
 <?php
 
     add_theme_support( 'menus' );
-    add_theme_support( 'post-thumbnails' )
+    add_theme_support( 'post-thumbnails' );
 
     function sb_theme_style(){
         wp_enqueue_style( "bootstrap-4", "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
