@@ -1,4 +1,6 @@
 <?php
+    require_once('class-wp-bootstrap-navwalker.php');
+
 
     add_theme_support( 'menus' );
     add_theme_support( 'post-thumbnails' );
@@ -17,4 +19,8 @@
         array('jquery'), true );
     }
     add_action( 'wp_enqueue_scripts', 'sb_theme_js');
+
+    register_nav_menus(array(
+        'primary'=> __('Primary Menu')
+    ));
 ?> 
