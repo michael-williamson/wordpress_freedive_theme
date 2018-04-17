@@ -4,10 +4,34 @@ body{
 }
 
 .jumbotron{
-    background-image: url(./images/freedive.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
-}  
+} 
+
+
+
+
+
+#main-nav a{
+    color: white; 
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) { 
+    .banner-text{
+        font-size: 2.5em; 
+    }
+ }
+
+
+ /* widgets page styles */
+
+ @media (min-width: 300px) and (max-width: 768px) { 
+    .widgets-pg h1{
+        font-size: 2.5em; 
+        text-align: center; 
+    }
+ }
